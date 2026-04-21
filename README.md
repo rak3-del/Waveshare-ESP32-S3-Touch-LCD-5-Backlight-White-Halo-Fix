@@ -3,6 +3,8 @@ Fix for white halo artifacts on Waveshare ESP32-S3-Touch-LCD-5 after backlight o
 
 The Problem
 
+![White Halo Artifact](pic/halo.jpg)
+
 When using the Waveshare ESP32-S3-Touch-LCD-5 (1024×600) with a screensaver function (backlight off, wake on touch), a white halo / burn-in artifact appears on the display after the backlight has been off for approximately 3-5 minutes.
 
 The artifact is visible immediately after the backlight turns back on and slowly fades away.
@@ -46,6 +48,8 @@ On the back of the board, near the LCD connector (pin 40 area), cut the trace sh
 Step 2 — Connect to 3.3V
 
 Run a jumper wire from the now-disconnected pin to the left pad of GPIO46 in the STRAPPING area on the front of the board. This pad is connected to 3.3V.
+
+![Hardware Fix Step 1](pic/hw-fix.jpg)
 
 Result:
 
